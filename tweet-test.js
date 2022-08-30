@@ -7,55 +7,55 @@ describe('Tweet', function() {
     assert.isFunction(Tweet);
   });
 
-  it.skip('has a sender', function() {
+  it('has a sender', function() {
     var tweet = new Tweet('@LetaCodes', 'something brilliant');
 
     assert.equal(tweet.sender, '@LetaCodes');
   });
 
-  it.skip('can have a different sender', function() {
+  it('can have a different sender', function() {
     var tweet = new Tweet('@ameseee', 'something else');
 
     assert.equal(tweet.sender, '@ameseee');
   });
 
-  it.skip('has content', function() {
+  it('has content', function() {
     var tweet = new Tweet('@LetaCodes', 'something brilliant');
 
     assert.equal(tweet.content, 'something brilliant');
   });
 
-  it.skip('can have different content', function() {
+  it('can have different content', function() {
     var tweet = new Tweet('@ameseee', 'something else');
 
     assert.equal(tweet.content, 'something else');
   });
 
-  it.skip('can contain a link', function() {
+  it('can contain a link', function() {
     var tweet = new Tweet('@ameseee', 'a thought about something', 'www.somevideo.io');
 
     assert.equal(tweet.link, 'www.somevideo.io');
   })
 
-  it.skip('should have a default link value', function() {
+  it('should have a default link value', function() {
     var tweet = new Tweet('@ameseee', 'something else');
 
     assert.equal(tweet.link, 'no link provided');
   })
 
-  it.skip('starts with no likes', function() {
+  it('starts with no likes', function() {
     var tweet = new Tweet('@LetaCodes', 'something brilliant');
 
     assert.equal(tweet.likes, 0)
   });
 
-  it.skip('starts with no retweets', function() {
+  it('starts with no retweets', function() {
     var tweet = new Tweet('@maxcell', 'something wonderful');
 
     assert.equal(tweet.retweets, 0);
   });
 
-  it.skip('starts with no replies', function() {
+  it('starts with no replies', function() {
     var tweet = new Tweet('@jwanliu', 'something amazing');
 
     assert.deepEqual(tweet.replies, []);
